@@ -20,9 +20,8 @@ marked.setOptions({
 class FactTable extends React.Component {
   constructor(props) {
     super(props);
-    let { factDB } = this.props.params;
     this.state = {
-      factDB: factDB,
+      factDB: this.props.params.factDB,
       factoids: [],
       settings: false,
       sortKey: "Time",
@@ -125,7 +124,6 @@ class Settings extends React.Component {
                 id="filterInput"
                 className="form-control"
                 placeholder="filter"
-                ref="filterTextInput"
                 value={this.props.filterText}
                 onChange={this.props.filterChange} />
             </div>
