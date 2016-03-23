@@ -1,4 +1,4 @@
-Repo for factoid list found at http://dan.soupwhale.com/facts
+Repo for factoid list hosted at http://dan.soupwhale.com/facts
 
 # TODO
 * /facts index page/component
