@@ -1,6 +1,6 @@
-Repo for factoid list hosted at http://dan.soupwhale.com/facts
+Factoid list hosted at http://dan.soupwhale.com/facts
 
-# TODO
+## TODO
 * /facts index page/component
 * ditch jquery/lodash for smaller libs
 * minify/bundle and transpile
