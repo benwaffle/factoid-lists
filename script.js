@@ -21,7 +21,6 @@ class FactTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      factDB: this.props.params.factDB,
       factoids: [],
       settings: false,
       sortKey: "Time",
@@ -32,7 +31,7 @@ class FactTable extends React.Component {
 
   componentDidMount() {
     $.ajax({
-      url: "factoids.php?json=" + this.state.factDB,
+      url: "factoids.php?json=" + this.props.params.factDB,
       dataType: "json",
       cache: true,
       success: function(data) {
